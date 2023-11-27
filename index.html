@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>PurpleFire Product Example</title>
+  </head>
+
+  <body>
+    <section>
+      <header>
+        <article id="small-devices-header">
+          <div>
+            <img
+              src="/public/icons/hamburguer-and-bkg.png"
+              alt="hamburguer-menu-icon"
+            />
+          </div>
+          <div>
+            <h1 id="small-devices-header-title">
+              Needus<span class="orange">.</span>
+            </h1>
+          </div>
+          <div id="small-devices-header-icons">
+            <img src="/public/icons/Search.svg" alt="search-icon" />
+            <img src="/public/icons/User.svg" alt="user-icon" />
+            <button id="header-small-devices-heart-button" onClick="changeHeartIcon()"> <img src="/public/icons/HeartGray.svg" alt="heart-icon" id="header-small-device-heart-icon"/></button>
+            <img
+              src="/public/icons/cart-set.png"
+              alt="cart-set-icon"
+              id="cart-icon"
+            />
+          </div>
+        </article>
+
+        <article id="desktop-devices-header">
+          <div id="desktop-devices-header-first-container">
+            <p id="welcome">Welcome to Needus & Get the best product</p>
+            <div id="header-language-and-currency-selector">
+              <div id="header-language-selector">
+                <p>ENG</p>
+                <img src="/public/icons/Down.png" alt="down-icon" id="header-down-item-language-selector"/>
+              </div>
+              <p>|</p>
+              <div id="header-currency-selector">
+                <p>USD</p>
+                <img src="/public/icons/Down.png" alt="down-icon" id="header-down-item-currency-selector" />
+              </div>
+            </div>
+          </div>
+
+          <div id="header-dropdown-menus-language-and-currency">
+            <div class="header-dropdown-menu" id="header-language-dropdown-menu">
+              <ul>
+                <li><a href="/">Category 1</a></li>
+                <li><a href="/">Category 2</a></li>
+                <li><a href="/">Category 3</a></li>
+               <li><a href="/">Category 4</a></li>
+                <li><a href="/">Category 5</a></li>
+            </ul>
+            </div>
+            <div class="header-dropdown-menu" id="header-currency-dropdown-menu">
+              <ul>
+                <li><a href="/">Category 1</a></li>
+                <li><a href="/">Category 2</a></li>
+                <li><a href="/">Category 3</a></li>
+               <li><a href="/">Category 4</a></li>
+                <li><a href="/">Category 5</a></li>
+            </ul>
+            </div>
+          </div>
+
+          <div id="desktop-devices-header-second-container">
+            <h1 id="desktop-devices-header-title">
+              Needus<span class="orange">.</span>
+            </h1>
+
+            <div id="desktop-devices-header-second-container-main">
+              <form>
+                <input type="text" placeholder="Search Products" />
+                <button id="desktop-device-main-search-button">
+                  <img
+                    src="/public/icons/SearchWhite.svg"
+                    alt="search-icon"
+                    id="desktop-device-main-search-icon"
+                  />
+                </button>
+              </form>
+
+              <div id="desktop-devices-categories-ad-login">
+                <div>
+                  <p>All Categories</p>
+                  <img src="/public/icons/DownBlack.png" alt="down-icon" />
+                </div>
+                <div id="login-container">
+                  <p>Login</p>
+                  <p>Signup</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="desktop-devices-main-container-icons">
+              <button id="header-desktop-devices-heart-button" onClick="changeBiggerHeartIcon()">
+              <img
+                src="/public/icons/HeartGray.svg"
+                alt="heart-icon"
+                id="desktop-devices-heart-icon"
+              /></button>
+              <img
+                src="/public/icons/cart-set.png"
+                alt="cart-set-icon"
+                id="desktop-devices-cart-icon"
+              />
+            </div>
+          </div>
+
+          <div id="desktop-devices-header-third-container">
+            <div>
+              <img
+                src="/public/icons/hamburguer-and-bkg.png"
+                alt="hamburguer-icon"
+                id="desktop-device-hamburguer-icon"
+              />
+              <p>All Categories</p>
+              <img src="/public/icons/DownBigger.png" alt="" />
+            </div>
+
+            <div>
+              <nav>
+                <ul id="desktop-devices-nav-ul">
+                  <li>
+                    <p>HOME</p>
+                    <img src="/public/icons/Down.png" alt="down-icon" />
+                  </li>
+                  <li>
+                    <p>ABOUT</p>
+                    <img src="/public/icons/Down.png" alt="down-icon" />
+                  </li>
+                  <li>
+                    <p class="orange">PRODUCT</p>
+                    <img src="/public/icons/DownOrange.png" alt="down-icon-orange" />
+                    
+                  </li>
+                  <li>
+                    <p>PAGES</p>
+                    <img src="/public/icons/Down.png" alt="down-icon" />
+                  </li>
+                  <li>
+                    <p>CONTACT</p>
+                    <img src="/public/icons/Down.png" alt="down-icon" />
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div>
+              <div>
+                <img
+                  src="/public/icons/Headset.png"
+                  alt="headset-icon"
+                  id="headset-icon"
+                />
+              </div>
+              <div id="desktop-device-contact">
+                <p>CONTACT US 24/7</p>
+                <p id="desktop-device-tel">+12012987481</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </header>
+    </section>
+
+    <section>
+      <main>
+        <article>
+          <div id="main-header-container">
+            <div id="main-title-and-sub">
+              <h1 id="main-title">TV COLLECTION</h1>
+              <h2 id="main-subtitle">HOME / PRODUCT / TV COLLECTION</h2>
+            </div>
+          </div>
+        </article>
+
+        <div id="flex-container-for-desktop-distribution">
+          <article id="main-big-image-and-text-detail">
+            <div>
+              <div id="main-front-image-container">
+                <img
+                  src="/public/imgs/ImageTv1.png"
+                  alt="tv-image"
+                  id="main-front-image"
+                />
+                <img src="/public/imgs/Shadow.png" alt="shadow" id="main-image-shadow">
+              </div>
+
+              <p id="product-detail-gray-line">
+                *LG C2 42 (106cm) 4K Smart OLED evo TV
+              </p>
+            </div>
+          </article>
+
+          <article id="main-slider-container">
+            <div id="slider">
+              <button id="slider-prev-arrow-container" class="slide-arrow-selector-container">
+                <img src="/public/icons/Prev.png" alt="prev-arrow" id="prev-arrow" />
+              </button>
+
+              <div>
+                <button class="border-orange image-slider-selector-item" onClick="selectImage(this)">
+                  <img src="/public/imgs/ImageTv1.png" alt="slide1" />
+                </button>
+                <button class="image-slider-selector-item" onClick="selectImage(this)">
+                  <img src="/public/imgs/ImageTv2.png" alt="slide2" />
+                </button>
+                <button class="image-slider-selector-item" onClick="selectImage(this)">
+                  <img src="/public/imgs/ImageTv3.png" alt="slide3" />
+                </button>
+                <button class="image-slider-selector-item" onClick="selectImage(this)">
+                  <img src="/public/imgs/ImageTv4.png" alt="slide4" />
+                </button>
+              </div>
+              <button id="slider-next-arrow-container" class="slide-arrow-selector-container">
+                <img src="/public/icons/Next.png" alt="next-arrow" id="next-arrow" />
+              </button>
+            </div>
+          </article>
+
+          <article id="main-item-details-container">
+            <div id="main-details-columns">
+              <div id="main-details-first-three-details">
+                <p class="main-details-column-item">
+                  Brand:
+                  <span class="main-details-column-item-lighter">LG</span>
+                </p>
+                <p class="main-details-column-item">
+                  Model:
+                  <span class="main-details-column-item-lighter"
+                    >OLED42C2PSA</span
+                  >
+                </p>
+                <p class="main-details-column-item">
+                  Availability:
+                  <span class="main-details-column-item-lighter"
+                    >Only 2 in Stock</span
+                  >
+                </p>
+              </div>
+
+              <h4 id="main-details-product-name">
+                LG C2 42 (106cm) 4K Smart OLED evo TV | WebOS | Cinema HDR
+              </h4>
+
+              <div id="main-details-stars-container">
+                <img src="/public/icons/Star.png" alt="star-icon" />
+                <img src="/public/icons/Star.png" alt="star-icon" />
+                <img src="/public/icons/Star.png" alt="star-icon" />
+                <img src="/public/icons/Star.png" alt="star-icon" />
+              </div>
+
+              <ul id="main-details-ul">
+                <li>
+                  α9 Gen5 AI Processor with AI Picture Pro & AI 4K Upscaling
+                </li>
+                <li>
+                  Pixel Dimming, Perfect Black, 100% Color Fidelity & Color
+                  Volume
+                </li>
+                <li>Hands-free Voice Control, Always Ready</li>
+                <li>
+                  Dolby Vision IQ with Precision Detail, Dolby Atmos, Filmmaker
+                  Mode
+                </li>
+                <li>Eye Comfort Display: Low-Blue Light, Flicker-Free</li>
+              </ul>
+
+              <div id="main-details-size-selector">
+                <button class="main-details-size-buttons selected-button" onClick="selectButton(this)">106 cm (42)</button>
+                <button class="main-details-size-buttons" onClick="selectButton(this)">121 cm (48)</button>
+                <button class="main-details-size-buttons" onClick="selectButton(this)">139 cm (55)</button>
+                <button class="main-details-size-buttons" onClick="selectButton(this)">164 cm (65)</button>
+                <button class="main-details-size-buttons" onClick="selectButton(this)">196 cm (77)</button>
+                <button class="main-details-size-buttons" onClick="selectButton(this)">210 cm (83)</button>
+              </div>
+
+              <div id="main-details-price-and-buy-component">
+                <div id="main-details-price-grid-first-floor">
+                  <p>USD(incl. of all taxes):</p>
+                  <div id="main-details-prices-container">
+                    <h4 id="discount-price-prod1-display"></h4>
+                    <h5 id="total-price-prod1-display"></h5>
+                  </div>
+                </div>
+
+                <div id="counter-container">
+                  <button id="decrement">-</button>
+                  <div id="counter">1</div>
+                  <button id="increment">+</button>
+                </div>
+                <button id="buy-button">Buy Now</button>
+                <button id="add-to-cart-button">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <article id="main-specifications">
+          <div id="main-specification-selector">
+            <button class="main-spec-selector-item spec-selected" onClick="selectSpec(this)"  id="description-button">Description</button>
+            <button class="main-spec-selector-item" onClick="selectSpec(this)">Specification</button>
+            <button class="main-spec-selector-item" onClick="selectSpec(this)">Reviews</button>
+          </div>
+          <div id="main-smaller-details">
+           
+          </div>
+        </article>
+      </main>
+    </section>
+
+    <section id="related-products">
+      <h2>Related Products</h2>
+      <div id="related-products-prods-container">
+
+        <article class="related-products-each-product">
+          <div class="related-products-prod-card">
+            <div class="related-products-top-stickers">
+              <div class="related-products-first-sticker green-background" ><p class="related-products-inside-text">NEW</p></div>
+              <img
+                src="/public/icons/Heart.svg"
+                alt="heart-icon"
+                class="related-products-heart-sticker"
+              />
+            </div> <div class="image-card-container">
+            <img
+              src="/public/imgs/ImageCard1.png"
+              alt="tv-image-1"
+              class="related-prod-card-img"
+            /></div>
+            <button>
+              <img src="/public/icons/cart.png" alt="cart-icon" /> Add to cart
+            </button>
+            <div class="related-products-card-text-block">
+              <h4>Sony BRAVIA XR Android Tv</h4>
+              <div>
+                <h5>$800.22</h5>
+                <h6>$1000.66</h6>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="related-products-each-product">
+          <div class="related-products-prod-card">
+            <div class="related-products-top-stickers">
+              <div class="related-products-first-sticker orange-background">-10%</div>
+              <img
+                src="/public/icons/HeartGray.svg"
+                alt="heart-icon"
+                class="related-products-heart-sticker"
+              />
+            </div>
+            <div class="image-card-container">
+            <img
+              src="/public/imgs/ImageCard2.png"
+              alt="tv-image-2"
+              class="related-prod-card-img"
+            /></div>
+            <button>
+              <img src="/public/icons/cart.png" alt="cart-icon" /> Add to cart
+            </button>
+            <div class="related-products-card-text-block">
+              <h4>Mi P1 Smart Android HD TV</h4>
+              <div>
+                <h5>$400.00</h5>
+                <h6 class="not-shown">$1000.66</h6>
+              </div>
+            </div>
+          </div>
+        </article>
+       
+          <article class="related-products-each-product">
+            <div class="related-products-prod-card">
+              <div class="related-products-top-stickers">
+                <div class="related-products-first-sticker yellow-background"><p>HOT</p></div>
+                <img
+                  src="/public/icons/Heart.svg"
+                  alt="heart-icon"
+                  class="related-products-heart-sticker"
+                />
+              </div> <div class="image-card-container">
+              <img
+                src="/public/imgs/ImageCard3.png"
+                alt="tv-image-3"
+                class="related-prod-card-img"
+              /></div>
+              <button>
+                <img src="/public/icons/cart.png" alt="cart-icon" /> Add to cart
+              </button>
+              <div class="related-products-card-text-block">
+                <h4>Konka OLED Android Tv</h4>
+                <div>
+                  <h5>$700.00</h5>
+                  <h6 class="not-shown">$1000.66</h6>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <article class="related-products-each-product">
+            <div class="related-products-prod-card">
+              <div class="related-products-top-stickers">
+                <div class="related-products-first-sticker blue-background">2 Years Warranty</div>
+                <img
+                  src="/public/icons/HeartGray.svg"
+                  alt="heart-icon"
+                  class="related-products-heart-sticker"
+                />
+              </div>
+              <div class="image-card-container">
+              <img
+                src="/public/imgs/ImageCard4.png"
+                alt="tv-image-4"
+                class="related-prod-card-img"
+              /></div>
+              <button class="related-products-add-to-cart-button">
+                <img src="/public/icons/cart.png" alt="cart-icon" class="related-product-cart-icon"/> Add to cart
+              </button>
+              <div class="related-products-card-text-block">
+                <h4>TCL Roku Android Tv</h4>
+                <div>
+                  <h5>$800.00</h5>
+                  <h6 class="not-shown">$1000.66</h6>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      
+
+      <div id="related-products-dots">
+        <img src="/public/icons/CircleOrange.png" alt="" class="small-circle-icon">
+        <img src="/public/icons/CircleGray.png" alt="" class="small-circle-icon">
+        <img src="/public/icons/CircleGray.png" alt="" class="small-circle-icon">
+        <img src="/public/icons/CircleGray.png" alt="" class="small-circle-icon">
+        <img src="/public/icons/CircleGray.png" alt="" class="small-circle-icon">
+
+
+
+      </div>
+    </section>
+
+    <footer>
+      <article id="footer-first-floor">
+        <div id="footer-first-floor-background-image"></div>
+        <div id="footer-first-floor-backing-image-mask"></div>
+        <div id="footer-first-article-content">
+          <h4>Join our newsletter and get offers
+          <br><span>Sign up our newsletter</span></h4>
+          <form>
+            <input type="text" placeholder="Enter your email" />
+            <button>SUBSCRIBE</button>
+          </form>
+        </div>
+      </article>
+
+      <article id="footer-second-floor">
+        <ul>
+          <li><a href="/">ABOUT US</a></li>
+          <li><a href="/">INFORMATION</a></li>
+          <li><a href="/">ACCOUNT</a></li>
+          <li><a href="/">STORE</a></li>
+          <li><a href="/">CONTACT US</a></li>
+        </ul>
+        <p id="copyright">Copyright 2023 All Right Reserved</p>
+      </article>
+
+      <article id="footer-second-floor-desktop-device">
+        <div id="footer-second-floor-desktop-device-columns-container">
+
+          <div class="footer-second-floor-desktop-flex-item">
+            <h3 class="footer-second-floor-flex-item-title" >About Us</h3><br>
+            <p id="footer-second-floor-flex-long-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet lacinia nulla ut laoreet. Quisque ultricies et tortor nec laoreet. </p>
+            <div id="footer-second-floor-social-container">
+              <img src="/public/icons/fb.png" alt="fb-icon">
+              <img src="/public/icons/whatsapp.png" alt="wp-icon">
+              <img src="/public/icons/ig.png" alt="ig-icon">
+              <img src="/public/icons/youtube.png" alt="yt-icon">
+            </div>
+          </div>
+
+          <div class="footer-second-floor-desktop-flex-item">
+            <h3 class="footer-second-floor-flex-item-title">Information</h3>
+            <ul>
+              <li>About</li>
+              <li>Delivery information</li>
+              <li>Privacy Policy</li>
+              <li>Sales</li>
+              <li>Terms & Conditions </li>
+              <li>EMI Payment</li>
+            </ul>
+          </div>
+
+          <div class="footer-second-floor-desktop-flex-item">
+            <h3 class="footer-second-floor-flex-item-title">ACCOUNT</h3>
+            <ul>
+              <li>My Account</li>
+              <li>My Orders</li>
+              <li>Returns</li>
+              <li>Shipping</li>
+              <li>Wishlist</li>
+              <li>Account Details</li>
+            </ul>
+          </div>
+
+          <div class="footer-second-floor-desktop-flex-item">
+            <h3 class="footer-second-floor-flex-item-title">Store</h3>
+            <ul>
+              <li>Affiliate</li>
+              <li>Discounts</li>
+              <li>Sale</li>
+              <li>Contact</li>
+              <li>All Collections</li>
+            </ul>
+          </div>
+
+          <div class="footer-second-floor-desktop-flex-item">
+            <h3 class="footer-second-floor-flex-item-title">CONTACT US</h3><br>
+            <p>If you have any query, please contact us
+               </p>
+            <p class="red">needus24@gmail.com</p>
+            <div>
+            <div class="footer-second-floor-text-plus-icon">
+              <img src="/public/icons/location.png" alt="location-icon"> <p>California, USA</p></div>
+              <div class="footer-second-floor-text-plus-icon">
+                <img src="/public/icons/mobile.png" alt="tel-icon"> <p>	+12012987481</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <hr id="footer-second-copy-upper-line">
+          <p id="copyright-desktop-device">Copyright 2023 All Right Reserved</p>
+        </div>
+      </article>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
