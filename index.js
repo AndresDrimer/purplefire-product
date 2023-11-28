@@ -24,6 +24,7 @@ document.getElementById("header-currency-selector").addEventListener("click", fu
     );
 
 
+
 //change Heart Color - header 
 //method for small devices and for desktop device
 let heart = document.getElementById("header-small-device-heart-icon")
@@ -46,12 +47,17 @@ function changeBiggerHeartIcon(){
     }
    }
 
+
+
+
 //select Size Buttons, only one elegible at a time
 function selectButton(someButton){
     document.querySelectorAll(".main-details-size-buttons").forEach(btn => btn.classList.remove("selected-button"));
 
     someButton.classList.add("selected-button")
 }
+
+
 
 //make counter and tranform total price
 let counter = document.getElementById("counter");
@@ -84,6 +90,8 @@ increment.addEventListener("click", function(){
     discountPriceProd1Display.innerHTML = (discountPriceProd1 * counter.textContent).toFixed(2);
    });
 
+
+
 // specs text button selector
 let mainSmallerDetails = document.getElementById("main-smaller-details");
 let textContent;
@@ -107,6 +115,8 @@ function selectSpec(someItem){
 
 mainSmallerDetails.innerHTML = textContent;
 }
+
+
 
 //main image change from pressing img button
 let images = document.querySelectorAll(".image-slider-selector-item");
@@ -134,6 +144,8 @@ prevArrow.addEventListener('click', function() {
    });
 
 
+
+   
 // make loop related products
 let productsContainer = document.getElementById("related-products-prods-container");
 let shownProducts = [];
