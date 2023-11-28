@@ -126,7 +126,7 @@
           <div id="desktop-devices-header-third-container">
             <div>
               <img
-                src="/public/icons/hamburguer-and-bkg.png"
+                src="/public/icons/Hamburguer.svg"
                 alt="hamburguer-icon"
                 id="desktop-device-hamburguer-icon"
               />
@@ -210,13 +210,14 @@
           </article>
 
           <article id="main-slider-container">
+
             <div id="slider">
               <button id="slider-prev-arrow-container" class="slide-arrow-selector-container">
                 <img src="/public/icons/Prev.png" alt="prev-arrow" id="prev-arrow" />
               </button>
 
               <div>
-                <button class="border-orange image-slider-selector-item" onClick="selectImage(this)">
+                <button class="border-orange image-slider-selector-item" onClick="selectImage(this)" id="slider-first-button-img">
                   <img src="/public/imgs/ImageTv1.png" alt="slide1" />
                 </button>
                 <button class="image-slider-selector-item" onClick="selectImage(this)">
@@ -288,6 +289,7 @@
                 <button class="main-details-size-buttons" onClick="selectButton(this)">121 cm (48)</button>
                 <button class="main-details-size-buttons" onClick="selectButton(this)">139 cm (55)</button>
                 <button class="main-details-size-buttons" onClick="selectButton(this)">164 cm (65)</button>
+                <button class="main-details-size-buttons" onClick="selectButton(this)" id="size-button-out-of-desktop-device">164 cm (65)</button>
                 <button class="main-details-size-buttons" onClick="selectButton(this)">196 cm (77)</button>
                 <button class="main-details-size-buttons" onClick="selectButton(this)">210 cm (83)</button>
               </div>
@@ -332,6 +334,7 @@
 
         <article class="related-products-each-product">
           <div class="related-products-prod-card">
+            <div class="card-back">
             <div class="related-products-top-stickers">
               <div class="related-products-first-sticker green-background" ><p class="related-products-inside-text">NEW</p></div>
               <img
@@ -339,15 +342,16 @@
                 alt="heart-icon"
                 class="related-products-heart-sticker"
               />
-            </div> <div class="image-card-container">
+            </div> 
+            <div class="image-card-container">
             <img
               src="/public/imgs/ImageCard1.png"
               alt="tv-image-1"
               class="related-prod-card-img"
-            /></div>
-            <button>
-              <img src="/public/icons/cart.png" alt="cart-icon" /> Add to cart
-            </button>
+            /> </div>
+            <button class="add-to-cart-desktop-device">
+              <img src="/public/icons/cart.png" alt="cart-icon" class="cart-icon-class" /><p class="add-to-cart-text">Add to cart</p> 
+            </button></div>
             <div class="related-products-card-text-block">
               <h4>Sony BRAVIA XR Android Tv</h4>
               <div>
@@ -360,6 +364,7 @@
 
         <article class="related-products-each-product">
           <div class="related-products-prod-card">
+            <div class="card-back">
             <div class="related-products-top-stickers">
               <div class="related-products-first-sticker orange-background">-10%</div>
               <img
@@ -374,9 +379,9 @@
               alt="tv-image-2"
               class="related-prod-card-img"
             /></div>
-            <button>
-              <img src="/public/icons/cart.png" alt="cart-icon" /> Add to cart
-            </button>
+            <button class="add-to-cart-desktop-device">
+              <img src="/public/icons/cart.png" alt="cart-icon" class="cart-icon-class"/><p class="add-to-cart-text">Add to cart</p> 
+            </button></div>
             <div class="related-products-card-text-block">
               <h4>Mi P1 Smart Android HD TV</h4>
               <div>
@@ -389,6 +394,7 @@
        
           <article class="related-products-each-product">
             <div class="related-products-prod-card">
+              <div class="card-back">
               <div class="related-products-top-stickers">
                 <div class="related-products-first-sticker yellow-background"><p>HOT</p></div>
                 <img
@@ -402,9 +408,9 @@
                 alt="tv-image-3"
                 class="related-prod-card-img"
               /></div>
-              <button>
-                <img src="/public/icons/cart.png" alt="cart-icon" /> Add to cart
-              </button>
+              <button class="add-to-cart-desktop-device">
+                <img src="/public/icons/cart.png" alt="cart-icon" class="cart-icon-class"/><p class="add-to-cart-text">Add to cart</p>
+              </button></div>
               <div class="related-products-card-text-block">
                 <h4>Konka OLED Android Tv</h4>
                 <div>
@@ -417,6 +423,7 @@
   
           <article class="related-products-each-product">
             <div class="related-products-prod-card">
+              <div class="card-back">
               <div class="related-products-top-stickers">
                 <div class="related-products-first-sticker blue-background">2 Years Warranty</div>
                 <img
@@ -431,9 +438,9 @@
                 alt="tv-image-4"
                 class="related-prod-card-img"
               /></div>
-              <button class="related-products-add-to-cart-button">
-                <img src="/public/icons/cart.png" alt="cart-icon" class="related-product-cart-icon"/> Add to cart
-              </button>
+              <button class="add-to-cart-desktop-device">
+                <img src="/public/icons/cart.png" alt="cart-icon" class="cart-icon-class"/><p class="add-to-cart-text"> Add to cart</p>
+              </button></div>
               <div class="related-products-card-text-block">
                 <h4>TCL Roku Android Tv</h4>
                 <div>

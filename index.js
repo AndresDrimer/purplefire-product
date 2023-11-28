@@ -76,8 +76,9 @@ increment.addEventListener("click", function(){
    });
    
    decrement.addEventListener("click", function(){
+    if(parseInt(counter.textContent)>0){
     counter.textContent = parseInt(counter.textContent) -1;
-
+    }
     totalPriceProd1Display.innerHTML = (originalPriceProd1 * counter.textContent).toFixed(2);
     
     discountPriceProd1Display.innerHTML = (discountPriceProd1 * counter.textContent).toFixed(2);
@@ -94,7 +95,7 @@ function selectSpec(someItem){
 
     switch(someItem.textContent) {
     case 'Description':
-        textContent =  "<p>The LG C2 42 (106cm) 4K Smart OLED evo TV is the best all around OLED TV we've tested. Although all OLEDs deliver similar fantastic picture quality, this one stands out for its value because it has many gaming oriented features that are great for gamers. </p><br /><p>*Only 65G2 is shown in the image for example purposes. All 2022 LG OLED models feature eco-friendly packaging.</p><br />   <p>**65C2 Stand model is at a minimum 39% lighter than the C1 series.<span class=`orange`>More</span>...</p>"
+        textContent =  "<p>The LG C2 42 (106cm) 4K Smart OLED evo TV is the best all around OLED TV we've tested. Although all OLEDs deliver similar fantastic picture quality, this one stands out for its value because it has many gaming oriented features that are great for gamers. </p><br /><p>*Only 65G2 is shown in the image for example purposes. All 2022 LG OLED models feature eco-friendly packaging.</p><br />   <p>**65C2 Stand model is at a minimum 39% lighter than the C1 series.<span class=\"orange\">More</span>...</p>"
         break;
     case 'Specification':
         textContent = "<p>Specifications Lorem ipsum...</p>"; 
